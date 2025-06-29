@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 31KasapKurt
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Gece r\xFCyamda kurdu g\xF6rd\xFCm\u2026 bu, kan\u0131n kokusudur. "
+  - "Bu g\xF6revi ba\u015Far\u0131yla tamamlarsan fili \xF6ld\xFCrmek i\xE7in gerekli
+    ekipmanlar\u0131 sana sa\u011Flayaca\u011F\u0131m Buka."
+  - "Yar\u0131n ailene kavu\u015Fmak i\xE7in yola \xE7\u0131km\u0131\u015F olabilirsin."
+  - "Buka asl\u0131nda ay\u0131yla kar\u015F\u0131la\u015F\u0131nca bu kadar ba\u015Far\u0131l\u0131
+    olaca\u011F\u0131n\u0131 tahmin etmemi\u015Ftim."
+  - "Madem hayvanlar\u0131 avlamakta bu kadar ustas\u0131n senden yeni iste\u011Fim
+    geliyor."
+  - "Yol \xFCzerinde baz\u0131 noktalarda kurtlar oluyor. Bu kurtlar y\xFCz\xFCnden
+    adada rahatl\u0131kla gezemiyorum."
+  - "Tabi ki de b\xFCt\xFCn kurtlar\u0131 \xF6ld\xFCrmeni beklemiyorum ancak benim
+    i\xE7in 2 kurt \xF6ld\xFCrmeni istiyorum."
+  - "Her yi\u011Fidin i\xE7inde bir kurt yatar. Seninki uyan\u0131k."
+  acceptOption: "Hadi ba\u015Flayal\u0131m."
+  acceptAnswer: "\xD6ld\xFCrd\xFC\u011F\xFCn kurtlar\u0131n di\u015Fini getirmeyi
+    unutma. "
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. Tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "G\xF6rd\xFC\u011F\xFCm kadar\u0131yla isteklerimi getirmi\u015Fsin.
+    Tel ve kereste ile Yay yapabilirsin. "
+  finalWords: "Ta\u015F ve dallardan oklar\u0131n\u0131 haz\u0131rla. Art\u0131k
+    fili \xF6ld\xFCrmeye haz\u0131rs\u0131n Buka. \nBu ok, bozk\u0131r\u0131n aleviyle
+    yo\u011Fruldu\u2026 tutu\u015Fturmaya haz\u0131r m\u0131s\u0131n?"
+  coinReward: 9
+  rewardItem1: Tel
+  rewardItem2: Su
+  firstRequirmentItem: Dis
+  firstRequirementAmount: 2
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

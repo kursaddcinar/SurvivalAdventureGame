@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: O10Stick
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Senin i\xE7in bir hediyem var. Adada vakit ge\xE7irirken depolamak i\xE7in sand\u0131\u011Fa
+    ihtiya\xE7 duyabilirsin. Sana yapt\u0131klar\u0131n\u0131n kar\u015F\u0131l\u0131\u011F\u0131
+    olarak bu sand\u0131\u011F\u0131 hediye ediyorum."
+  - "D\xFCn gece elimdeki odunlar bitti\u015F. benim i\xE7in dal par\xE7alar\u0131
+    toplaman\u0131 istiyorum."
+  - "Unutma dal par\xE7alar\u0131 genellikle a\u011Fa\xE7 alt\u0131nda bulunur."
+  - "E\u011Fer envanterin yetersiz gelirse sand\u0131k kullanmay\u0131 unutma."
+  acceptOption: Tabi ki.
+  acceptAnswer: "Benim i\xE7in 10 dal par\xE7as\u0131 getir. Sana baz\u0131 s\xFCrpizlerim
+    olacak."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel isteklerimin hepsi burada. Senin i\xE7in alt\u0131n
+    ve biraz da et haz\u0131rlad\u0131m."
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz."
+  coinReward: 2
+  rewardItem1: Gold_coin
+  rewardItem2: Beef
+  firstRequirmentItem: Stick
+  firstRequirementAmount: 10
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 30Kasap
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Her ad\u0131mda atalar\u0131m\u0131n nefesi omzumda\u2026 geri d\xF6nmek yok."
+  - "1 hafta \xF6ncesine kadar kaptand\u0131n. \u015Euan ise hem kaptan hemde \u0130n\u015Faat
+    ustas\u0131s\u0131n. Tebrik ederim bu kadar ilerleyece\u011Fini tahmin etmiyordum
+    Buka."
+  - "Art\u0131k senden karma\u015F\u0131k \u015Feyler istemeyece\u011Fim."
+  - "Adada ne kadar gezdin bilmiyorum. E\u011Fer g\xF6z att\u0131ysan g\xF6rm\xFC\u015Fs\xFCnd\xFCr
+    ki baz\u0131 y\u0131rt\u0131c\u0131 hayvanlar var. Bu hayvanlardan biri ay\u0131lar.
+    Ayr\u0131ca pen\xE7leri \xE7ok de\u011Ferli."
+  - "Ay\u0131lar\u0131 kontrol alt\u0131na almakta zorlan\u0131yorum. Bug\xFCn senden
+    isteyece\u011Fim \u015Fey ay\u0131 \xF6ld\xFCrmen. Ancak bunu nas\u0131l kontrol
+    edece\u011Fim konusunda fikrim yok."
+  - "San\u0131r\u0131m \xF6ld\xFCrd\xFC\u011F\xFCn ay\u0131lar\u0131n pen\xE7esini
+    bana getirirsen onlar\u0131 \xF6ld\xFCrd\xFC\u011F\xFCne inan\u0131r\u0131m.
+    Her ay\u0131da 4 pen\xE7e var."
+  acceptOption: "Hadi ba\u015Flayal\u0131m."
+  acceptAnswer: "Benim i\xE7in 2 ay\u0131 \xF6ld\xFCrmeni istiyorum. Yani bana 8
+    adet ay\u0131 pen\xE7esi getirirsen benim i\xE7in yapt\u0131\u011F\u0131n iyiliklerin
+    m\xFCkafat\u0131n\u0131 fazlas\u0131yla alacaks\u0131n."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. Tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "G\xF6rd\xFC\u011F\xFCm kadar\u0131yla isteklerimi getirmi\u015Fsin.
+    S\xFCpersin."
+  finalWords: "Haz\u0131r olunca tekrar gel. Art\u0131k sona yakla\u015F\u0131yoruz
+    Buka. Bug\xFCn ikimiz i\xE7in de kutlu olacak."
+  coinReward: 8
+  rewardItem1: Su
+  rewardItem2: Ekmek
+  firstRequirmentItem: Pence
+  firstRequirementAmount: 8
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

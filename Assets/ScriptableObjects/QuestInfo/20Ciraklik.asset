@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 20Ciraklik
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Yol uzun, ama inan\xE7 y\xFCre\u011Fimdeki ate\u015Ften k\u0131sa yanmaz."
+  - "Sen de kimsin! Ha ha ha! Tak\u0131l\u0131yorum yabanc\u0131. Ben de seni bekliyordum."
+  - "D\xFCn bana getirdi\u011Fin sand\u0131k i\xE7in te\u015Fekk\xFCr ederim. D\xFCn
+    tahtalarla bir \u015Feyler \xFCretebilece\u011Fini \xF6\u011Frenmi\u015Ftin."
+  - "Bug\xFCn senden benim i\xE7in k\xFC\xE7\xFCk bir kulube in\u015Fa etmeni iisteyece\u011Fim.
+    Buralarda bazen yaban hayvanlar\u0131 olabiliyor baz\u0131 e\u015Fyalar\u0131m\u0131
+    oraya koymam gerek."
+  - "Tabi hemen senden b\xF6yle bir \u015Fey istemek olmaz. \xD6nce sana bu kulubeyi
+    nas\u0131l in\u015Fa edece\u011Fini anlatsam daha iyi. Bana \xE7\u0131rakl\u0131k
+    yapmaya haz\u0131r m\u0131s\u0131n?"
+  - "Kulube in\u015Fa ederken 1 adet zemin ve 4 adet duvar olmas\u0131 yeterli. Bu
+    b\xF6lgeye ya\u011Fmur ya\u011Fmad\u0131\u011F\u0131 i\xE7in \xE7at\u0131s\u0131n\u0131
+    yapmam\u0131za gerek yok. Hem seni de yormak istemem."
+  - "Bunun i\xE7in a\u011Fa\xE7lardan k\xFCt\xFCkler getirmeni istiyorum.\n1 zemin
+    i\xE7in 4 tahta\n1 duvar i\xE7in ise 2 tahta laz\u0131m.\n1 K\xFCt\xFCkten 2
+    adet tahta \xFCretebildi\u011Fini bildi\u011Fimize g\xF6re sana laz\u0131m olan
+    10 adet tahta. "
+  - "San\u0131r\u0131m yanl\u0131\u015F hesaplad\u0131m 12 tahtaya ihtiyac\u0131n
+    var. Bu yap\u0131ya ba\u015Flamadan \xF6nce duvar ve zemini yapabildi\u011Fini
+    g\xF6rmek istiyorum."
+  acceptOption: "Hadi ba\u015Flayal\u0131m."
+  acceptAnswer: "1'er adet duvar ve zemin in\u015Fa etmeni istiyorum"
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. Tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "Tam da istedi\u011Fim \u015Fekilde yapm\u0131\u015Fs\u0131n.
+    Tebrikler Buka."
+  finalWords: "\u0130yi i\u015F \xE7\u0131kard\u0131n. "
+  coinReward: 6
+  rewardItem1: Duvar
+  rewardItem2: Zemin
+  firstRequirmentItem: Duvar
+  firstRequirementAmount: 1
+  secondRequirmentItem: Zemin
+  secondRequirementAmount: 1
+  hasCheckPoints: 0
+  checkpoints: []

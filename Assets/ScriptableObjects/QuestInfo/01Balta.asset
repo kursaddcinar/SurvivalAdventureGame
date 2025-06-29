@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 01Balta
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Seni g\xF6rd\xFC\u011F\xFCme sevindim Buka."
+  - "\xD6nceki g\xF6revinde getirmi\u015F oldu\u011Fun derileri avad\u0131\u011F\u0131n
+    tav\u015Fanlardan da elde edebilirsin. Hatta her tav\u015Fandan et elde edece\u011Fi
+    unutma."
+  - "Bu adadan kurtulamaya kararl\u0131s\u0131n, aileni \xF6zlemi\u015F olmal\u0131s\u0131n.
+    Hadi yabanc\u0131 seninle anla\u015Fal\u0131m. Senden 7 g\xF6rev daha yapman\u0131
+    isteyece\u011Fim. E\u011Fer isteklerimi yaparsan burdan kurtulmana yard\u0131mc\u0131
+    olaca\u011F\u0131m."
+  - "Bug\xFCn ki son g\xF6revini s\xF6yl\xFCyorum."
+  - "Benim i\xE7in Ta\u015F par\xE7alar\u0131 ve Dal par\xE7alar\u0131 toplaman\u0131
+    istiyorum."
+  - "Ta\u015F par\xE7alar\u0131n\u0131 kayal\u0131klar\u0131n yak\u0131n\u0131nda,
+    dal par\xE7alar\u0131n\u0131 ise a\u011Fa\xE7 alt\u0131nda bulabilirsin."
+  acceptOption: Seni dinliyorum.
+  acceptAnswer: "Bana 3 adet ta\u015F ve 3 adet dal par\xE7as\u0131 getirmeni istiyorum."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel. Asl\u0131nda bu isteklerim sana burada bir\u015Feyler
+    \xF6\u011Fretmek i\xE7indi. E\u011Fer 3'er adet dal ve ta\u015F par\xE7an varsa
+    bir adet balta \xFCretebilece\u011Fini biliyor muydun. El i\u015F\xE7ili\u011Fi
+    penceresinden Aletler b\xF6l\xFCm\xFCnden buna ula\u015Fabilirsin. Kim bilir
+    belki ok da yapabilirsin!"
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz Buka. Yar\u0131n buralarda olmayaca\u011F\u0131m,
+    haritadan benim yerimi bulabilirsin."
+  coinReward: 3
+  rewardItem1: Su
+  rewardItem2: 
+  firstRequirmentItem: Dal
+  firstRequirementAmount: 3
+  secondRequirmentItem: Tas
+  secondRequirementAmount: 3
+  hasCheckPoints: 0
+  checkpoints: []

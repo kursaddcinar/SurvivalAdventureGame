@@ -1,0 +1,55 @@
+# Unity Generated
+[Libraries to ignore]
+[Libraries to ignore]
+[Libraries to ignore]
+
+# Build folders
+Build/
+Builds/
+*.apk
+*.aab
+
+# Audio ve Texture Dosyaları (Büyük olanlar)
+*.wav
+*.tga
+*.psd
+*.tif
+*.zip
+*.rar
+
+# Gereksiz klasörler
+Logs/
+Obj/
+Library/
+Temp/
+.vscode/
+.vs/
+backup/
+.DS_Store
+Thumbs.db
+
+# Rider/VisualStudio
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+
+# Gizli Unity dosyaları
+*.meta
+*.bak
+*.tmp
+
+# Yedekleme
+*.old
+*.backup
+
+
+# Büyük klasörleri hariç tut
+Assets/ART/
+Assets/Bitgem/
+Assets/Free medieval weapons/
+Assets/Sounds/
+Assets/Models/
+Assets/Fonts/

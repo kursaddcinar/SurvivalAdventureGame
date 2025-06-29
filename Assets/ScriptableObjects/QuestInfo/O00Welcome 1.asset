@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: O00Welcome 1
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Bu adaya seni d\xFC\u015F\xFCren nedir, Yabanc\u0131!"
+  - "Evet d\xFCn ak\u015Famki f\u0131rt\u0131nadan sonra geminiz alabora olmu\u015Fa
+    benziyor. \u0130smim Alex. Sana yard\u0131mc\u0131 olmak isterim"
+  - "Hayatta kalmak i\xE7in sana yard\u0131mc\u0131 olabilirim."
+  - "Evet bana g\xFCvenememen \xE7ok normal. Hayatta kalman i\xE7in sana aletler
+    gerekiyor. \xD6ncelikle 3 tahta par\xE7as\u0131 ve 3 ta\u015F ile bir balta yapabilece\u011Fini
+    biliyor muydun. E\u011Fer bunu ba\u015Far\u0131rsan hem bana g\xFCvenmi\u015F
+    olacaks\u0131n hem de bu adadan kurtulman i\xE7in sana yard\u0131mc\u0131 olaca\u011F\u0131m."
+  - "Evet bana g\xFCvenememen \xE7ok normal. Hayatta kalman i\xE7in sana aletler
+    gerekiyor. \xD6ncelikle 3 tahta par\xE7as\u0131 ve 3 ta\u015F ile bir balta yapabilece\u011Fini
+    biliyor muydun. E\u011Fer bunu ba\u015Far\u0131rsan hem bana g\xFCvenmi\u015F
+    olacaks\u0131n hem de bu adadan kurtulman i\xE7in sana yard\u0131mc\u0131 olaca\u011F\u0131m."
+  - "Evet bana g\xFCvenememen \xE7ok normal. Hayatta kalman i\xE7in sana aletler
+    gerekiyor. \xD6ncelikle 3 tahta par\xE7as\u0131 ve 3 ta\u015F ile bir balta yapabilece\u011Fini
+    biliyor muydun. E\u011Fer bunu ba\u015Far\u0131rsan hem bana g\xFCvenmi\u015F
+    olacaks\u0131n hem de bu adadan kurtulman i\xE7in sana yard\u0131mc\u0131 olaca\u011F\u0131m."
+  acceptOption: "G\xFCvenilir birine benziyorsun sana bir \u015Fans vermek istiyorum."
+  acceptAnswer: "\xC7ok g\xFCzel e\u011Fer baltay\u0131 yapabilirsen bana tekrar
+    gel. G\xF6r\xFC\u015Fmek \xFCzere."
+  declineOption: "Sana G\xFCvenmiyorum."
+  declineAnswer: "Sen kaybedersin yabanc\u0131!"
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala baltay\u0131 tamamlamam\u0131\u015F\u0131n. tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel. Art\u0131k seni burdan kurtarmak i\xE7in ad\u0131m
+    atabiliriz. Ac\u0131km\u0131\u015F olmal\u0131s\u0131n senin i\xE7in et ve bir
+    alt\u0131n veriyorum."
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz."
+  coinReward: 1
+  rewardItem1: Gold_coin
+  rewardItem2: Beef
+  firstRequirmentItem: Axe
+  firstRequirementAmount: 1
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

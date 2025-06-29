@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 00Welcome
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Ben Taygun\u2019um. Bozk\u0131r beni yeti\u015Ftirdi, ate\u015F beni \u015Fekillendirdi."
+  - "Ben bu adada ya\u015Fayan son ki\u015Fiyin. Yak\u0131nlarda ben de buradan gidece\u011Fim.
+    Hayatta kalmak i\xE7in sana yard\u0131mc\u0131 olabilirim."
+  - "Ben bu adada ya\u015Fayan son ki\u015Fiyin. Yak\u0131nlarda ben de buradan gidece\u011Fim.
+    Hayatta kalmak i\xE7in sana yard\u0131mc\u0131 olabilirim."
+  - "Burdan gidince t\xFCccara satabilece\u011Fim t\xFCrden e\u015Fylar\u0131 isteyece\u011Fim
+    senden."
+  - "Kendi ba\u015F\u0131na burdan gitmeye \xE7al\u0131\u015Fma, \xE7\u0131k\u0131\u015F
+    kap\u0131s\u0131n\u0131n bek\xE7isi lanetli bir fil var. Onu yard\u0131m\u0131m
+    olmadan \xF6ld\xFCrmen imkans\u0131z"
+  - "Evet bana g\xFCvenememen \xE7ok normal. Ancak bu adadan kendi ba\u015F\u0131na
+    kurtulman pek m\xFCmk\xFCn de\u011Fil."
+  - "G\xFCvenini kazanmak ve birbirimize yard\u0131m etmek i\xE7in sana bir teklifim
+    var. B\xF6ylelikle birbirimizin g\xFCvenini kazanaca\u011F\u0131z."
+  - "\u0130lerdeki kayalar\u0131n alt\u0131nda kocaman kuru bir a\u011Fa\xE7 var.
+    Onun alt\u0131nda 2 adet tav\u015Fan derisi var. Bana onlar\u0131 getirmeni istiyorum."
+  acceptOption: "G\xFCvenilir birine benziyorsun sana bir \u015Fans vermek istiyorum."
+  acceptAnswer: "\xC7ok g\xFCzel e\u011Fer isteklerimi bulabilirsen bana tekrar gel.
+    G\xF6r\xFC\u015Fmek \xFCzere."
+  declineOption: "Sana G\xFCvenmiyorum."
+  declineAnswer: "Sen kaybedersin yabanc\u0131!"
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "H\xE2l\xE2 isteklerimi tamamlamam\u0131\u015F\u0131n. Tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel. Art\u0131k seni burdan kurtarmak i\xE7in ad\u0131m
+    atabiliriz. Ac\u0131km\u0131\u015F olaca\u011F\u0131n\u0131 d\xFC\u015F\xFCnd\xFC\u011F\xFCm
+    i\xE7in sana et veriyorum. Tekrar haz\u0131r olunca bana u\u011Fra."
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz."
+  coinReward: 2
+  rewardItem1: Su
+  rewardItem2: Ekmek
+  firstRequirmentItem: Deri
+  firstRequirementAmount: 2
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints:
+  - {fileID: 11400000, guid: c148795610744bd4bac07477576dcf23, type: 2}

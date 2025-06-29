@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 21Ustalik
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Bozk\u0131r, suskun gibi g\xF6r\xFCn\xFCr... ama bast\u0131\u011F\u0131n topra\u011F\u0131n
+    bile haf\u0131zas\u0131 vard\u0131r."
+  - "Ben, do\u011Fdu\u011Fum gece g\xF6ky\xFCz\xFCnde \xFC\xE7 ay belirmi\u015Fti.
+    \u015Eamanlar bunun kutsal bir alamet oldu\u011Funu s\xF6yledi."
+  - "Hen\xFCz on ya\u015F\u0131ndayken kurt ruhlar\u0131yla konu\u015Ftum, on be\u015Finde
+    Erlik\u2019in hizmetk\xE2rlar\u0131n\u0131 alt ettin."
+  - "\u015Eimdi ise yollar\u0131m\u0131z seninle kesi\u015Fti Buka. Bilgilerim burdan
+    kurtulmana \u0131\u015F\u0131k tutacak."
+  - "Hadi ge\xE7 kalmadan kulubeye ba\u015Flayal\u0131m."
+  - "Duvarlar ve zemini haz\u0131rlad\u0131\u011F\u0131na g\xF6re bu i\u015F i\xE7in
+    malzemeler tamam g\xF6z\xFCk\xFCyor."
+  - "O zaman bir kulubeyi nas\u0131l in\u015Fa edece\u011Fini sana \xF6\u011Fretebilirim."
+  - "\xD6ncelikle zemin malzemesini yere koyman gekiyor ancak bunu yapmak i\xE7in
+    d\xFCz bir arazi olmak zorunda. D\xFCz alana zemini yerle\u015Ftirdikten sonra
+    bu zeminin 4 kenar\u0131na ise duvarlar\u0131 koymal\u0131s\u0131n."
+  acceptOption: "Hadi ba\u015Flayal\u0131m."
+  acceptAnswer: "4 duvar ve 1 zeminden olu\u015Fan bir k\xFC\xE7\xFCk kulube in\u015Fa
+    etmeni istiyorum. Ayr\u0131ca benim i\xE7in 1 adet daha tav\u015Fan derisi getirmeni
+    istiyorum."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. Tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "G\xF6rd\xFC\u011F\xFCm kadar\u0131yla kulube haz\u0131r. S\xFCpersin."
+  finalWords: "Yar\u0131n son g\xFCn\xFCn. Bu g\xFCn iyi dinlen ve iyi beslen."
+  coinReward: 7
+  rewardItem1: 
+  rewardItem2: 
+  firstRequirmentItem: Deri
+  firstRequirementAmount: 1
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 1
+  checkpoints:
+  - {fileID: 11400000, guid: 04e7e6fd1b1eb9c469b5daa07a0b5153, type: 2}

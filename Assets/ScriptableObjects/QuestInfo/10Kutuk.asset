@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: 10Kutuk
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "G\xF6lgeye sayg\u0131 duyar\u0131m, ama ona teslim olmam."
+  - "Seni G\xF6rd\xFC\u011F\xFCme sevindim Buka. D\xFCn iyi i\u015F \xE7\u0131kard\u0131n."
+  - "Eskiden ben de senin gibi dinamiktim. \u015Ean\u0131m\u0131 duymu\u015Fsundur.
+    Altay da\u011Flar\u0131n\u0131n cesur sava\u015F\xE7\u0131lar\u0131ndan Taygun."
+  - "Sava\u015Famayacak kadar ya\u015Flan\u0131nca buraya geldim. Neyse, fazla tutmayay\u0131m
+    seni."
+  - "Ge\xE7en k\u0131\u015F b\xFCt\xFCn k\xFCt\xFCkleri yakt\u0131m. K\u0131\u015Fa
+    haz\u0131rl\u0131k i\xE7in malzemeye ihtiyac\u0131m var."
+  - "Nas\u0131l balta yapaca\u011F\u0131n\u0131 umar\u0131m hat\u0131rl\u0131yorsundur."
+  - "Benim i\xE7in k\xFCt\xFCk getirmeni istiyorum."
+  - "K\xFCt\xFCklere a\u011Fac\u0131 keserek ula\u015Fabilirsin. Ama unutma her a\u011Fac\u0131n
+    k\xFCt\xFC\u011F\xFCn\xFC alamazs\u0131n, kesebilece\u011Fin a\u011Fa\xE7lar\u0131
+    bul."
+  acceptOption: Tabi ki.
+  acceptAnswer: " Bana 4 adet k\xFCt\xFCk getir."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel isteklerimin hepsi burada. Te\u015Fekk\xFCr
+    mahiyetinde sana bir bilgi vermek istiyorum. K\xFCt\xFCkleri ben gibi yakman\u0131n
+    yan\u0131 s\u0131ra tahta yap\u0131m\u0131nda da kullanabilirsin. Bu tahtalar
+    ile \xE7e\u015Fitli malzemeler \xFCretirsin."
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz."
+  coinReward: 4
+  rewardItem1: Kereste
+  rewardItem2: Su
+  firstRequirmentItem: Kutuk
+  firstRequirementAmount: 4
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

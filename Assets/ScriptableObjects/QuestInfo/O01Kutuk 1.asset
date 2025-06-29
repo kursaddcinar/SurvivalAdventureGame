@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed5e96f2cd943b41b75e5fcf1a70735, type: 3}
+  m_Name: O01Kutuk 1
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Seni g\xF6rd\xFC\u011F\xFCme sevindim."
+  - "Bu adadan kurtulamaya kararl\u0131s\u0131n, aileni \xF6zlemi\u015F olmal\u0131s\u0131n.
+    Hadi sana bir g\xF6rev verelim."
+  - "Etraf\u0131ndaki kesilebilir a\u011Fa\xE7lar\u0131 g\xF6rm\xFC\u015Fs\xFCnd\xFCr.
+    Bu g\xF6rev onlarla ilgili. Bir a\u011Fac\u0131 kesince ondan k\xFCt\xFCk elde
+    edebilece\u011Fini biliyor muydun?"
+  acceptOption: Seni dinliyorum.
+  acceptAnswer: "Bana 4 adet K\xFCt\xFCk getirmeni istiyorum."
+  declineOption: "Bu g\xF6reve haz\u0131r de\u011Filim."
+  declineAnswer: "Haz\u0131r olunca tekrar  gel."
+  comebackAfterDecline: "Fikrini de\u011Fi\u015Ftirdin san\u0131r\u0131m?"
+  comebackInProgress: "Hala isteklerimi tamamlamam\u0131\u015F\u0131n. tamamlay\u0131nca
+    tekrar gel."
+  comebackCompleted: "\xC7ok g\xFCzel. Asl\u0131nda bu isteklerim sana burada bir\u015Feyler
+    \xF6\u011Fretmek i\xE7indi. E\u011Fer 1 adet k\xFCt\xFC\u011F\xFCn varsa 2 adet
+    tahta olu\u015Fturabilece\u011Fini biliyor muydun? Ayr\u0131ca tahtalar ile zemin
+    ve duvar yaparak kendine ev in\u015Fa edebilirsin!"
+  finalWords: "G\xF6r\xFC\u015F\xFCr\xFCz."
+  coinReward: 1
+  rewardItem1: Plank
+  rewardItem2: 
+  firstRequirmentItem: Log
+  firstRequirementAmount: 4
+  secondRequirmentItem: 
+  secondRequirementAmount: 0
+  hasCheckPoints: 0
+  checkpoints: []

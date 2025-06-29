@@ -1,0 +1,350 @@
+{
+    "playerData": {
+        "positionX": 124.4874038696289,
+        "positionY": 2.0799996852874758,
+        "positionZ": 63.940982818603519,
+        "health": 96.0,
+        "calories": 1044.0,
+        "hydration": 35.0,
+        "inventoryContent": [
+            "Deri",
+            "Deri",
+            "Kereste",
+            "Kereste",
+            "Dis",
+            "Zemin",
+            "Duvar",
+            "Dal",
+            "Kutuk",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Ok",
+            "Pence"
+        ],
+        "quickSlotContent": [
+            "Axe",
+            "Axe",
+            "Axe",
+            "Axe"
+        ],
+        "points": 11,
+        "saveDateTime": "12.06.2025 23:50"
+    },
+    "environmentData": {
+        "pickedUpItems": [
+            "Stick_Model (2)",
+            "Stick_Model",
+            "Stick_Model (1)",
+            "Stone009",
+            "Stone0010",
+            "Stone0012",
+            "Stick_Model (6)",
+            "Log",
+            "Log",
+            "Beef_Model(Clone)",
+            "Beef_Model(Clone)",
+            "Hide_Model(Clone)",
+            "Log",
+            "Log",
+            "Beef_Model(Clone)",
+            "Hide_Model(Clone)",
+            "Beef_Model(Clone)",
+            "Beef_Model(Clone)",
+            "Stick_Model (7)",
+            "Stick_Model (3)",
+            "Stone005",
+            "Stone006",
+            "Stone0016",
+            "Beef_Model(Clone)"
+        ],
+        "treeData": [
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 52.88915252685547,
+                    "y": 5.9216837882995609,
+                    "z": 68.69200897216797
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 114.37981414794922,
+                    "y": 1.271684169769287,
+                    "z": 82.12627410888672
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 67.33999633789063,
+                    "y": 6.241683483123779,
+                    "z": 73.33999633789063
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 124.37981414794922,
+                    "y": 1.1016840934753419,
+                    "z": 15.097442626953125
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 140.28982543945313,
+                    "y": 4.461683750152588,
+                    "z": 28.547439575195314
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 149.82981872558595,
+                    "y": 8.221683502197266,
+                    "z": 47.967437744140628
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 90.02981567382813,
+                    "y": 4.881683826446533,
+                    "z": 86.26744079589844
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 191.52981567382813,
+                    "y": 2.1516833305358888,
+                    "z": 122.43743896484375
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 217.43980407714845,
+                    "y": 1.8116841316223145,
+                    "z": 95.31744384765625
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 201.52981567382813,
+                    "y": 2.321683406829834,
+                    "z": 86.86744689941406
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 130.03915405273438,
+                    "y": 3.891684055328369,
+                    "z": 135.46200561523438
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 154.77981567382813,
+                    "y": 1.3016839027404786,
+                    "z": 120.20744323730469
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 144.489990234375,
+                    "y": 2.1616835594177248,
+                    "z": 140.11000061035157
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 226.9798126220703,
+                    "y": 1.4216837882995606,
+                    "z": 114.73744201660156
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 238.7698211669922,
+                    "y": 5.261683940887451,
+                    "z": 141.80743408203126
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent",
+                "position": {
+                    "x": 110.27981567382813,
+                    "y": 19.7316837310791,
+                    "z": 154.13743591308595
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Tree_Parent2",
+                "position": {
+                    "x": 47.017372131347659,
+                    "y": 6.869999885559082,
+                    "z": 121.4800033569336
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Stump",
+                "position": {
+                    "x": 134.40982055664063,
+                    "y": 2.851684093475342,
+                    "z": 75.53743743896485
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "name": "Stump",
+                "position": {
+                    "x": 70.10523223876953,
+                    "y": 4.971683979034424,
+                    "z": 53.93743896484375
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        ],
+        "animals": [
+            "Rabbit",
+            "Rabbit",
+            "Demo White Rabbit",
+            "elephant",
+            "Wolf (2)",
+            "elephant (1)"
+        ],
+        "storage": []
+    },
+    "questProgressData": [
+        {
+            "npcName": "Second_NPC",
+            "activeQuestIndex": 0,
+            "quests": [
+                {
+                    "questName": "Ormancı",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                },
+                {
+                    "questName": "Saklama kabı",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                }
+            ],
+            "npcDeactivated": false
+        }
+    ],
+    "currentNPCIndex": 1
+}
