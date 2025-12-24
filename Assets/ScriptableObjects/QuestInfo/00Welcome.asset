@@ -16,8 +16,6 @@ MonoBehaviour:
   - "Ben Taygun\u2019um. Bozk\u0131r beni yeti\u015Ftirdi, ate\u015F beni \u015Fekillendirdi."
   - "Ben bu adada ya\u015Fayan son ki\u015Fiyin. Yak\u0131nlarda ben de buradan gidece\u011Fim.
     Hayatta kalmak i\xE7in sana yard\u0131mc\u0131 olabilirim."
-  - "Ben bu adada ya\u015Fayan son ki\u015Fiyin. Yak\u0131nlarda ben de buradan gidece\u011Fim.
-    Hayatta kalmak i\xE7in sana yard\u0131mc\u0131 olabilirim."
   - "Burdan gidince t\xFCccara satabilece\u011Fim t\xFCrden e\u015Fylar\u0131 isteyece\u011Fim
     senden."
   - "Kendi ba\u015F\u0131na burdan gitmeye \xE7al\u0131\u015Fma, \xE7\u0131k\u0131\u015F
@@ -27,8 +25,13 @@ MonoBehaviour:
     kurtulman pek m\xFCmk\xFCn de\u011Fil."
   - "G\xFCvenini kazanmak ve birbirimize yard\u0131m etmek i\xE7in sana bir teklifim
     var. B\xF6ylelikle birbirimizin g\xFCvenini kazanaca\u011F\u0131z."
-  - "\u0130lerdeki kayalar\u0131n alt\u0131nda kocaman kuru bir a\u011Fa\xE7 var.
-    Onun alt\u0131nda 2 adet tav\u015Fan derisi var. Bana onlar\u0131 getirmeni istiyorum."
+  - "Bu adadaki eskiden en \xE7ok gidilen yerlerden biri olan Ulu \xC7\u0131nar'a
+    gitmeni istiyorum. Ne yaz\u0131k ki bu \xE7\u0131nar a\u011Fac\u0131 y\u0131llar\u0131n
+    lanetlerinin a\u011F\u0131rl\u0131\u011F\u0131yla kurudu."
+  - "\u0130lerdeki kayalar\u0131n yan\u0131nda kocaman kuru bir a\u011Fa\xE7 var.
+    Adan\u0131n \xE7o\u011Fu yerinden onu g\xF6rebilirsin."
+  - "Onun alt\u0131nda tav\u015Fan derisi var. Bana onlardan 2 tanesini getirmeni
+    istiyorum."
   acceptOption: "G\xFCvenilir birine benziyorsun sana bir \u015Fans vermek istiyorum."
   acceptAnswer: "\xC7ok g\xFCzel e\u011Fer isteklerimi bulabilirsen bana tekrar gel.
     G\xF6r\xFC\u015Fmek \xFCzere."

@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class CreatureChaseState : StateMachineBehaviour
 {
-    Transform player;             // Oyuncu (activeConstructable tag'li nesne)
+    Transform player;             // Oyuncu (Player tag'li nesne)
     NavMeshAgent agent;           // NavMesh üzerinden hareket sağlayan bileşen
     public float chaseSpeed = 6f; // Kovalama hızı
     float timer;
@@ -16,7 +16,7 @@ public class CreatureChaseState : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         // Oyuncu ve ajan referansları alınır
-        player = GameObject.FindGameObjectWithTag("activeConstructable").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = animator.GetComponent<NavMeshAgent>();
 
         agent.speed = chaseSpeed; // Ajanın hızı kovalamaya göre ayarlanır

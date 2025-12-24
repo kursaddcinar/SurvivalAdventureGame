@@ -14,7 +14,7 @@ public class Village : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Çarpan nesne oyuncuyu temsil ediyorsa
-        if(other.CompareTag("activeConstructable"))
+        if(other.CompareTag("Player"))
         {
             // İlgili checkpoint tamamlandı olarak işaretlenir.
             reachVillage_Alex.isCompleted = true;

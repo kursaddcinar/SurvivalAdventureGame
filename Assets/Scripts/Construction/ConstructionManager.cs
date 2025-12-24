@@ -55,7 +55,7 @@ public class ConstructionManager : MonoBehaviour
 
         item.transform.SetParent(constructionHoldingSpot.transform, false);
         itemToBeConstructed = item;
-        itemToBeConstructed.gameObject.tag = "activeConstructable";
+        itemToBeConstructed.gameObject.tag = "Player";
 
         // Ray işlemi için collider devre dışı bırakılır
         itemToBeConstructed.GetComponent<Constructable>().solidCollider.enabled = false;

@@ -80,7 +80,7 @@ public class SaveManager : MonoBehaviour
             StorageManager.Instance.RecalculaTeStorage(storageUI); // 🔧 BURASI KRİTİK
         }
 
-        GameObject player = GameObject.FindWithTag("activeConstructable");
+        GameObject player = GameObject.FindWithTag("Player");
         Vector3 playerPosition = player.transform.position;
 
         // PlayerState'ten sağlık verilerini al
@@ -181,7 +181,7 @@ public class SaveManager : MonoBehaviour
             }
         }
 
-        GameObject player = GameObject.FindWithTag("activeConstructable");
+        GameObject player = GameObject.FindWithTag("Player");
         player.transform.position = data.playerData.GetPosition();
 
         // YÜKLENEN VERİLERİ OYUNCUYA UYGULA
@@ -203,11 +203,11 @@ public class SaveManager : MonoBehaviour
     // Belirli kullanıcı ve slot için dosya yolunu döndür
     private string GetSavePath(int userId, int slotIndex)
     {
-#if UNITY_EDITOR
-        return Application.dataPath + $"/Resources/Saves/save_user_{userId}_slot_{slotIndex}.json";
-#else
-    return Application.persistentDataPath + $"/save_user_{userId}_slot_{slotIndex}.json";
-#endif
+        #if UNITY_EDITOR
+                return Application.dataPath + $"/Resources/Saves/save_user_{userId}_slot_{slotIndex}.json";
+        #else
+            return Application.persistentDataPath + $"/save_user_{userId}_slot_{slotIndex}.json";
+        #endif
     }
 
     private EnvironmentData GetEnvironmentData()

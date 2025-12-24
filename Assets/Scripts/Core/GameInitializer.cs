@@ -13,11 +13,11 @@ public class GameInitializer : MonoBehaviour
         if (SaveManager.Instance.isStartingNewGame)
         {
             // Oyuncunun sahneye ilk spawn olacağı konum
-            Vector3 startPos = new Vector3(-8, 1, 1);
+            //Vector3 startPos = new Vector3(60, 5, 30);
 
             // Sahnedeki oyuncu objesini bul (Tag'e dikkat!)
-            GameObject player = GameObject.FindWithTag("activeConstructable");
-            player.transform.position = startPos;
+            GameObject player = GameObject.FindWithTag("Player");
+            //player.transform.position = startPos;
 
             // Oyuncuyu başlangıç pozisyonunda ilk kez kaydet
             SaveManager.Instance.SaveGame(

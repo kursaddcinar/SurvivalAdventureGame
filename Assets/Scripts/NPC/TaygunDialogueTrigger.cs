@@ -16,7 +16,7 @@ public class TaygunDialogueTrigger : MonoBehaviour
         if (hasTriggered) return;
 
         // Oyuncu ile değil, yerleştirilen yapı ile temas kontrolü yapılır
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             hasTriggered = true;
 

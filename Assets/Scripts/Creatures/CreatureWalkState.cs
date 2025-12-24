@@ -16,7 +16,7 @@ public class CreatureWalkState : StateMachineBehaviour
     // Duruma ilk girildiğinde çalışır (yürümeye başlanır)
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        player = GameObject.FindGameObjectWithTag("activeConstructable").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = animator.GetComponent<NavMeshAgent>();
 
         agent.speed = walkSpeed;

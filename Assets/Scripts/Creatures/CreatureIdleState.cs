@@ -13,7 +13,7 @@ public class CreatureIdleState : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer = 0;
-        player = GameObject.FindGameObjectWithTag("activeConstructable").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Bu durumdayken her karede çalışır

@@ -52,19 +52,19 @@ public class Constructable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Zeminle temas varsa işaretle
-        if (other.CompareTag("Ground") && gameObject.CompareTag("activeConstructable"))
+        if (other.CompareTag("Ground") && gameObject.CompareTag("Player"))
         {
             isGrounded = true;
         }
 
         // Ağaç ya da toplanabilir nesneyle çakışma varsa işaretle
-        if ((other.CompareTag("Tree") || other.CompareTag("pickable")) && gameObject.CompareTag("activeConstructable"))
+        if ((other.CompareTag("Tree") || other.CompareTag("pickable")) && gameObject.CompareTag("Player"))
         {
             isOverlappingItems = true;
         }
 
         // Başka bir ghost nesneyle temas varsa işaretle
-        if (other.gameObject.CompareTag("ghost") && gameObject.CompareTag("activeConstructable"))
+        if (other.gameObject.CompareTag("ghost") && gameObject.CompareTag("Player"))
         {
             detectedGhostMemeber = true;
         }
@@ -73,19 +73,19 @@ public class Constructable : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Zeminle temas kesildiğinde işaret kaldırılır
-        if (other.CompareTag("Ground") && gameObject.CompareTag("activeConstructable"))
+        if (other.CompareTag("Ground") && gameObject.CompareTag("Player"))
         {
             isGrounded = false;
         }
 
         // Ağaç ya da nesneyle çakışma sona ererse işaret kaldırılır
-        if ((other.CompareTag("Tree") || other.CompareTag("pickable")) && gameObject.CompareTag("activeConstructable"))
+        if ((other.CompareTag("Tree") || other.CompareTag("pickable")) && gameObject.CompareTag("Player"))
         {
             isOverlappingItems = false;
         }
 
         // Ghost nesnesiyle temas sona ererse işaret kaldırılır
-        if (other.gameObject.CompareTag("ghost") && gameObject.CompareTag("activeConstructable"))
+        if (other.gameObject.CompareTag("ghost") && gameObject.CompareTag("Player"))
         {
             detectedGhostMemeber = false;
         }

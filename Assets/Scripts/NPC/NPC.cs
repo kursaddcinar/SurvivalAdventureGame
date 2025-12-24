@@ -429,7 +429,7 @@ public class NPC : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Oyuncu menzile girdiğinde
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
         }
@@ -438,7 +438,7 @@ public class NPC : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Oyuncu menzilden çıktığında
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = false;
         }

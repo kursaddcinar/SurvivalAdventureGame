@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class CreatureAttackState : StateMachineBehaviour
 {
-    Transform player;              // Oyuncuya ait transform (activeConstructable tag'li)
+    Transform player;              // Oyuncuya ait transform (Player tag'li)
     NavMeshAgent agent;            // Hareket için kullanılan NavMesh agent
     public float stopAttackingDistance = 7.1f; // Bu mesafeden fazla uzaklaşırsa saldırmayı bırakır
     public float attackRate = 1f;              // Saldırı sıklığı (saniyede 1 kez)
@@ -16,7 +16,7 @@ public class CreatureAttackState : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         // Oyuncuyu bul
-        player = GameObject.FindGameObjectWithTag("activeConstructable").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         // Agent bileşenini al
         agent = animator.GetComponent<NavMeshAgent>();
     }

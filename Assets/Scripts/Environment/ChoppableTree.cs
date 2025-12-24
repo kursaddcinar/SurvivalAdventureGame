@@ -29,7 +29,7 @@ public class ChoppableTree : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Oyuncu yaklaştığında işaretle
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
         }
@@ -38,7 +38,7 @@ public class ChoppableTree : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Oyuncu uzaklaştığında işareti kaldır
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = false;
         }

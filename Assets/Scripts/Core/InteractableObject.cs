@@ -45,7 +45,7 @@ public class InteractableObject : MonoBehaviour
     // Oyuncu menzile girince tetiklenir
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
         }
@@ -54,7 +54,7 @@ public class InteractableObject : MonoBehaviour
     // Oyuncu menzilden çıkınca tetiklenir
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = false;
         }

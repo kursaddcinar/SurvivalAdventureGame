@@ -141,7 +141,7 @@ public class Animal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
             healthBarSlider.gameObject.SetActive(true); // Oyuncu yaklaşınca can çubuğu görünür
@@ -150,7 +150,7 @@ public class Animal : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("activeConstructable"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = false;
             healthBarSlider.gameObject.SetActive(false); // Oyuncu uzaklaşınca çubuk gizlenir
