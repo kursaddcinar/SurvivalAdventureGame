@@ -28,9 +28,10 @@ public class QuestInfo : ScriptableObject
     public string finalWords; // Görev tamamen bittikten sonra söylenen kapanış cümleleri.
 
     [Header("Rewards")] 
-    public int coinReward; // Görevi tamamlayınca verilen altın miktarı.
+    //public int coinReward; // Görevi tamamlayınca verilen altın miktarı.
     public string rewardItem1; // Envantere eklenecek 1. ödül.
     public string rewardItem2; // Envantere eklenecek 2. ödül.
+    public string rewardItem3; // Envantere eklenecek 2. ödül.
 
     [Header("Requirements")]
     public string firstRequirmentItem; // Görev için toplanması gereken 1. item.

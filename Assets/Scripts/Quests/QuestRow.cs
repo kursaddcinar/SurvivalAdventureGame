@@ -15,13 +15,16 @@ public class QuestRow : MonoBehaviour
     public bool isActive; // Görevin aktif olup olmadığını belirler.
     public bool isTracking; // Görevin takip edilip edilmediğini belirler.
 
-    public Text coinAmount; // Görevin ödül olarak verdiği para miktarını gösterecek UI öğesi.
+    //public Text coinAmount; // Görevin ödül olarak verdiği para miktarını gösterecek UI öğesi.
 
     public Image firstReward; // İlk ödülün görselini gösterecek UI öğesi.
     public Text firstRewardAmount; // İlk ödülün miktarını gösterecek UI öğesi.
 
     public Image secondReward; // İkinci ödülün görselini gösterecek UI öğesi.
     public Text secondRewardAmount; // İkinci ödülün miktarını gösterecek UI öğesi.
+
+    public Image thirdReward; // İkinci ödülün görselini gösterecek UI öğesi.
+    public Text thirdRewardAmount; // İkinci ödülün miktarını gösterecek UI öğesi.
 
     public Quest thisQuest; // Bu satırın temsil ettiği görev nesnesi.
 

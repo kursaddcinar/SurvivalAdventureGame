@@ -67,8 +67,17 @@ public class NPC : MonoBehaviour
         isTalkingWithPlayer = true;
         LookAtPlayer(); // NPC yüzünü oyuncuya döner
 
+        //kayıtlı veriden kabul edilmiş görev varsa onu yükle/ 1. ve 2. görevleri tara
+        /*
+        if (    quests[activeQuestIndex].accepted   )
+              //  || (quests[1].accepted && quests[1].isCompleted == false)   )
+        {
+            firstTimeInteraction = false;
+            Debug.Log("kayıtlı oyun var ve first time false yapıldı.");
+        }
+*/
         // İlk etkileşim
-        if (firstTimeInteraction)
+        if (firstTimeInteraction && !quests[activeQuestIndex].accepted)
         {
             firstTimeInteraction = false;
             currentActiveQuest = quests[activeQuestIndex]; // İlk görevi ata
@@ -77,6 +86,8 @@ public class NPC : MonoBehaviour
         }
         else
         {
+            
+            currentActiveQuest = quests[activeQuestIndex]; 
             // Görev daha önce reddedilmişse
             if (currentActiveQuest.declined)
             {
@@ -352,10 +363,15 @@ public class NPC : MonoBehaviour
         QuestManager.Instance.MarkQuestCompleted(currentActiveQuest);
 
         // Ödül olarak verilecek altın miktarını al
-        var coinsRecieved = currentActiveQuest.info.coinReward;
+        //var coinsRecieved = currentActiveQuest.info.coinReward;
+        
+        //var coinsRecieved = currentActiveQuest.info.coinReward;
 
         // Puan sistemine altın eklenmesi planlanmış ama kodda yorum satırında
         // PointManager.Instance.AddCoins(coinsRecieved);
+
+        //şimdilik indexteki kadar puan ekleyelim
+        PointManager.Instance.AddPoints(activeQuestIndex+1);
 
         // Eğer ilk ödül nesnesi varsa envantere ekle
         if (!string.IsNullOrEmpty(currentActiveQuest.info.rewardItem1))

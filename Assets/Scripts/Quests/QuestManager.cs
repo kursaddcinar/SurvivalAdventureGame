@@ -167,7 +167,7 @@ public class QuestManager : MonoBehaviour
 
         NPCManager.Instance.CheckQuestProgressAndAdvance(); // NPC zinciri yönetimi
 
-        PointManager.Instance.AddPoints(quest.info.coinReward); // Puan sistemi entegrasyonu
+        //PointManager.Instance.AddPoints(quest.info.coinReward); // Puan sistemi entegrasyonu
     }
 
     // Görev menüsündeki görev listesini UI'da yeniler
@@ -194,7 +194,7 @@ public class QuestManager : MonoBehaviour
             qRow.isActive = true;
             qRow.isTracking = true;
 
-            qRow.coinAmount.text = $"{activeQuest.info.coinReward}";
+            //qRow.coinAmount.text = $"{activeQuest.info.coinReward}";
 
             // Ödül 1 varsa göster, yoksa gizle
             if (activeQuest.info.rewardItem1 != "")
@@ -211,13 +211,25 @@ public class QuestManager : MonoBehaviour
             // Ödül 2 varsa göster, yoksa gizle
             if (activeQuest.info.rewardItem2 != "")
             {
-                qRow.firstReward.sprite = GetSpriteForitem(activeQuest.info.rewardItem2);
+                qRow.secondReward.sprite = GetSpriteForitem(activeQuest.info.rewardItem2);
                 qRow.secondRewardAmount.text = "";
             }
             else
             {
                 qRow.secondReward.gameObject.SetActive(false);
                 qRow.secondRewardAmount.text = "";
+            }
+
+            // Ödül 3 varsa göster, yoksa gizle
+            if (activeQuest.info.rewardItem3 != "")
+            {
+                qRow.thirdReward.sprite = GetSpriteForitem(activeQuest.info.rewardItem3);
+                qRow.thirdRewardAmount.text = "";
+            }
+            else
+            {
+                qRow.thirdReward.gameObject.SetActive(false);
+                qRow.thirdRewardAmount.text = "";
             }
         }
 
@@ -235,8 +247,9 @@ public class QuestManager : MonoBehaviour
             qRow.isActive = false;
             qRow.isTracking = false;
 
-            qRow.coinAmount.text = $"{completedQuest.info.coinReward}";
+            //qRow.coinAmount.text = $"{completedQuest.info.coinReward}";
 
+            // Ödül 1 varsa göster, yoksa gizle
             if (completedQuest.info.rewardItem1 != "")
             {
                 qRow.firstReward.sprite = GetSpriteForitem(completedQuest.info.rewardItem1);
@@ -248,15 +261,28 @@ public class QuestManager : MonoBehaviour
                 qRow.firstRewardAmount.text = "";
             }
 
+            // Ödül 2 varsa göster, yoksa gizle
             if (completedQuest.info.rewardItem2 != "")
             {
-                qRow.firstReward.sprite = GetSpriteForitem(completedQuest.info.rewardItem2);
+                qRow.secondReward.sprite = GetSpriteForitem(completedQuest.info.rewardItem2);
                 qRow.secondRewardAmount.text = "";
             }
             else
             {
                 qRow.secondReward.gameObject.SetActive(false);
                 qRow.secondRewardAmount.text = "";
+            }
+
+            // Ödül 3 varsa göster, yoksa gizle
+            if (completedQuest.info.rewardItem3 != "")
+            {
+                qRow.thirdReward.sprite = GetSpriteForitem(completedQuest.info.rewardItem3);
+                qRow.thirdRewardAmount.text = "";
+            }
+            else
+            {
+                qRow.thirdReward.gameObject.SetActive(false);
+                qRow.thirdRewardAmount.text = "";
             }
         }
     }
@@ -266,6 +292,47 @@ public class QuestManager : MonoBehaviour
     {
         var itemToGet = Resources.Load<GameObject>(item); // Prefab'ı yükle
         return itemToGet.GetComponent<UnityEngine.UI.Image>().sprite; // Image bileşeninden sprite al
+    }
+
+    public void ReconstructQuestLists()
+    {
+        // 1. Önce listeleri sıfırla ki üst üste binmesin
+        allActiveQuests.Clear();
+        allCompletedQuests.Clear();
+        allTrackedQuests.Clear();
+
+        // 2. Kaynak gerçek (NPC'ler) üzerinden veriyi çek
+        if (NPCManager.Instance != null && NPCManager.Instance.npcList != null)
+        {
+            foreach (var npc in NPCManager.Instance.npcList)
+            {
+                foreach (var quest in npc.quests)
+                {
+                    // Eğer görev tamamlanmışsa
+                    if (quest.isCompleted)
+                    {
+                        if (!allCompletedQuests.Contains(quest))
+                        {
+                            allCompletedQuests.Add(quest);
+                        }
+                    }
+                    // Eğer görev kabul edilmiş ama henüz bitmemişse (Aktif)
+                    else if (quest.accepted)
+                    {
+                        if (!allActiveQuests.Contains(quest))
+                        {
+                            allActiveQuests.Add(quest);
+                            // Varsayılan olarak aktif görevleri takibe de alalım
+                            allTrackedQuests.Add(quest); 
+                        }
+                    }
+                }
+            }
+        }
+
+        // 3. UI'ı Yenile
+        RefreshQuestList();    // Büyük menüyü çiz
+        RefreshTrackerList();  // Sol üstteki ufak listeyi çiz
     }
 }
 

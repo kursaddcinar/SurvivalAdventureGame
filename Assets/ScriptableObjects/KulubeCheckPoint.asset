@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KulubeCheckPoint
   m_EditorClassIdentifier: 
   checkpointName: Kulube
-  isCompleted: 0
+  isCompleted: 1

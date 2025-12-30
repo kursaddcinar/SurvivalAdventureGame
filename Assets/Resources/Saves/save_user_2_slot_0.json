@@ -1,33 +1,22 @@
 {
     "playerData": {
-        "positionX": 113.90373229980469,
-        "positionY": 1.0799998044967652,
-        "positionZ": 44.64371871948242,
+        "positionX": 47.681331634521487,
+        "positionY": 3.525067090988159,
+        "positionZ": 48.65034103393555,
         "health": 100.0,
-        "calories": 1869.0,
-        "hydration": 65.0,
-        "inventoryContent": [
-            "Su",
-            "Su",
-            "Ekmek"
+        "calories": 1992.0,
+        "hydration": 97.0,
+        "inventoryContent": [],
+        "quickSlotContent": [
+            "Balta"
         ],
-        "quickSlotContent": [],
-        "points": 5,
-        "saveDateTime": "30.12.2025 19:09",
-        "hasTriggeredTomurIntro": 1,
+        "points": 0,
+        "saveDateTime": "30.12.2025 22:10",
+        "hasTriggeredTomurIntro": 0,
         "gameIsCompleted": false
     },
     "environmentData": {
-        "pickedUpItems": [
-            "Stick_Model (1)",
-            "Hide_Model (1)",
-            "Hide_Model (2)",
-            "Stick_Model (8)",
-            "Stick_Model (5)",
-            "Stone0016",
-            "Stone0010",
-            "Stone0013"
-        ],
+        "pickedUpItems": [],
         "treeData": [
             {
                 "name": "Tree_Parent2",
@@ -939,6 +928,29 @@
     },
     "questProgressData": [
         {
+            "npcName": "First_NPC",
+            "activeQuestIndex": 0,
+            "quests": [
+                {
+                    "questName": "Güven",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                },
+                {
+                    "questName": "Küçük parçalar",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                }
+            ],
+            "npcDeactivated": false
+        },
+        {
             "npcName": "Second_NPC",
             "activeQuestIndex": 0,
             "quests": [
@@ -959,8 +971,54 @@
                     "currentReplyIndex": 0
                 }
             ],
-            "npcDeactivated": false
+            "npcDeactivated": true
+        },
+        {
+            "npcName": "Third_NPC",
+            "activeQuestIndex": 0,
+            "quests": [
+                {
+                    "questName": "Ciraklik",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                },
+                {
+                    "questName": "Ustalik",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                }
+            ],
+            "npcDeactivated": true
+        },
+        {
+            "npcName": "Fourth_NPC",
+            "activeQuestIndex": 0,
+            "quests": [
+                {
+                    "questName": "Kasap",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                },
+                {
+                    "questName": "Kasap",
+                    "accepted": false,
+                    "declined": false,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
+                    "currentReplyIndex": 0
+                }
+            ],
+            "npcDeactivated": true
         }
     ],
-    "currentNPCIndex": 1
+    "currentNPCIndex": 0
 }

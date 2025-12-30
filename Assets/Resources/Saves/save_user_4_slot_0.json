@@ -1,33 +1,20 @@
 {
     "playerData": {
-        "positionX": 113.90373229980469,
-        "positionY": 1.0799998044967652,
-        "positionZ": 44.64371871948242,
-        "health": 100.0,
-        "calories": 1869.0,
-        "hydration": 65.0,
-        "inventoryContent": [
-            "Su",
-            "Su",
-            "Ekmek"
-        ],
+        "positionX": 60.0,
+        "positionY": 5.0,
+        "positionZ": 30.100000381469728,
+        "health": 0.0,
+        "calories": 0.0,
+        "hydration": 0.0,
+        "inventoryContent": [],
         "quickSlotContent": [],
-        "points": 5,
-        "saveDateTime": "30.12.2025 19:09",
-        "hasTriggeredTomurIntro": 1,
+        "points": 0,
+        "saveDateTime": "30.12.2025 19:57",
+        "hasTriggeredTomurIntro": 0,
         "gameIsCompleted": false
     },
     "environmentData": {
-        "pickedUpItems": [
-            "Stick_Model (1)",
-            "Hide_Model (1)",
-            "Hide_Model (2)",
-            "Stick_Model (8)",
-            "Stick_Model (5)",
-            "Stone0016",
-            "Stone0010",
-            "Stone0013"
-        ],
+        "pickedUpItems": [],
         "treeData": [
             {
                 "name": "Tree_Parent2",
@@ -939,11 +926,11 @@
     },
     "questProgressData": [
         {
-            "npcName": "Second_NPC",
+            "npcName": "First_NPC",
             "activeQuestIndex": 0,
             "quests": [
                 {
-                    "questName": "Ormancı",
+                    "questName": "Güven",
                     "accepted": false,
                     "declined": false,
                     "isCompleted": false,
@@ -951,7 +938,7 @@
                     "currentReplyIndex": 0
                 },
                 {
-                    "questName": "Saklama kabı",
+                    "questName": "Küçük parçalar",
                     "accepted": false,
                     "declined": false,
                     "isCompleted": false,
@@ -962,5 +949,5 @@
             "npcDeactivated": false
         }
     ],
-    "currentNPCIndex": 1
+    "currentNPCIndex": 0
 }

@@ -197,7 +197,13 @@ public class SaveManager : MonoBehaviour
 
         NPCManager.Instance.SetCurrentNPCIndex(data.currentNPCIndex);
 
+
         ApplyQuestProgress(data.questProgressData);
+
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.ReconstructQuestLists();
+        }
         isStartingNewGame = false;
     }
     // Belirli kullanıcı ve slot için dosya yolunu döndür
@@ -288,25 +294,30 @@ public class SaveManager : MonoBehaviour
     {
         List<NPCQuestProgressData> dataList = new List<NPCQuestProgressData>();
 
-        foreach (NPC npc in FindObjectsOfType<NPC>())
+        // DEĞİŞİKLİK BURADA: Sahneyi tarama, Manager'daki listeyi kullan.
+        // Bu liste inaktif (tamamlanmış) NPC'leri de içerir.
+        if (NPCManager.Instance.npcList != null)
         {
-            var npcData = new NPCQuestProgressData();
-            npcData.npcName = npc.gameObject.name; // 👈 npcName yerine object name kullanıyoruz
-            npcData.activeQuestIndex = npc.activeQuestIndex;
-            npcData.npcDeactivated = !npc.gameObject.activeSelf;
-
-            foreach (var quest in npc.quests) // 👈 assignedQuests değil, quests kullan
+            foreach (NPC npc in NPCManager.Instance.npcList)
             {
-                var qsd = new QuestSaveData();
-                qsd.questName = quest.questName;
-                qsd.accepted = quest.accepted;
-                qsd.declined = quest.declined;
-                qsd.initialDialogCompleted = quest.initialDialogCompleted;
-                qsd.isCompleted = quest.isCompleted;
-                npcData.quests.Add(qsd);
-            }
+                var npcData = new NPCQuestProgressData();
+                npcData.npcName = npc.gameObject.name; 
+                npcData.activeQuestIndex = npc.activeQuestIndex;
+                npcData.npcDeactivated = !npc.gameObject.activeSelf; // Burada inaktif olduğu doğru şekilde false/true kaydedilir.
 
-            dataList.Add(npcData);
+                foreach (var quest in npc.quests)
+                {
+                    var qsd = new QuestSaveData();
+                    qsd.questName = quest.questName;
+                    qsd.accepted = quest.accepted;
+                    qsd.declined = quest.declined;
+                    qsd.initialDialogCompleted = quest.initialDialogCompleted;
+                    qsd.isCompleted = quest.isCompleted;
+                    npcData.quests.Add(qsd);
+                }
+
+                dataList.Add(npcData);
+            }
         }
 
         return dataList;
@@ -374,18 +385,23 @@ public class SaveManager : MonoBehaviour
 
     private void ApplyQuestProgress(List<NPCQuestProgressData> savedData)
     {
+        // Kaydedilen veriyi dön
         foreach (var npcData in savedData)
         {
-            foreach (NPC npc in FindObjectsOfType<NPC>())
+            // DEĞİŞİKLİK BURADA: Yine FindObjectsOfType yerine Manager listesine bakıyoruz.
+            // Böylece kapalı olan NPC'yi bulup, verisini yükleyip, gerekiyorsa (npcDeactivated false ise) açabiliriz.
+            foreach (NPC npc in NPCManager.Instance.npcList)
             {
-                // NPC'yi object adıyla eşleştir
+                // İsim eşleşmesi (ID kullanman daha iyi olurdu ama şimdilik isimle devam)
                 if (npc.gameObject.name == npcData.npcName)
                 {
-                    // Aktif görev index'i ve NPC'nin aktiflik durumu yüklenir
                     npc.activeQuestIndex = npcData.activeQuestIndex;
+                    
+                    // NPC'nin aktiflik durumunu geri yükle
+                    // Eğer save dosyasında deaktifse kapalı kalır, değilse açılır.
                     npc.gameObject.SetActive(!npcData.npcDeactivated);
 
-                    // NPC'ye ait görevlerin durumu tek tek aktarılır
+                    // Görev verilerini işle
                     for (int i = 0; i < npcData.quests.Count && i < npc.quests.Count; i++)
                     {
                         var savedQuest = npcData.quests[i];

@@ -26,7 +26,8 @@ public class InventorySystem : MonoBehaviour
 
     public List<string> itemsPickedUp; // Oyuncunun topladığı eşya isimleri listesi
 
-    public int stackLimit = 3; // Aynı türden maksimum eşya adedi (stack)
+    public int stackLimit ; // Aynı türden maksimum eşya adedi (stack)
+    //public int stackLimit = 3;
 
     private void Awake()
     {
