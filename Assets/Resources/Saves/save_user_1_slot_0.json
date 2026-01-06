@@ -1,39 +1,74 @@
 {
     "playerData": {
-        "positionX": 133.25521850585938,
-        "positionY": 1.0799998044967652,
-        "positionZ": 41.852760314941409,
-        "health": 100.0,
-        "calories": 1937.0,
-        "hydration": 94.0,
+        "positionX": 435.4410705566406,
+        "positionY": 2.3298816680908205,
+        "positionZ": 885.5516357421875,
+        "health": 24.0,
+        "calories": 1659.0,
+        "hydration": 73.0,
         "inventoryContent": [
-            "Deri",
-            "Dal",
-            "Dal",
-            "Dal",
+            "Duvar",
             "Tas",
             "Tas",
             "Tas",
             "Su",
-            "Ekmek"
+            "Su",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Pence",
+            "Pence",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Et",
+            "Tas",
+            "Zemin",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Yay"
         ],
-        "quickSlotContent": [],
-        "points": 1,
-        "saveDateTime": "30.12.2025 21:01",
-        "hasTriggeredTomurIntro": 1,
-        "gameIsCompleted": false
+        "quickSlotContent": [
+            "Balta",
+            "Yay"
+        ],
+        "points": 35,
+        "saveDateTime": "06.01.2026 17:57",
+        "hasTriggeredTomurIntro": 2,
+        "gameIsCompleted": true
     },
     "environmentData": {
         "pickedUpItems": [
+            "Stone009",
+            "Stick_Model (1)",
             "Hide_Model (1)",
             "Hide_Model (2)",
             "Hide_Model",
-            "Stick_Model (1)",
-            "Stone009",
             "Stone0010",
+            "Stick_Model (4)",
+            "Stone0013",
             "Stone0016",
             "Stick_Model (5)",
-            "Stick_Model (8)"
+            "Stick_Model (8)",
+            "Pence_Model(Clone)",
+            "Pence_Model(Clone)",
+            "Dis_Model(Clone)",
+            "Et_Model(Clone)",
+            "Dis_Model(Clone)",
+            "Et_Model(Clone)",
+            "Stone0015 (1)",
+            "Stone0014 (1)",
+            "Pence_Model(Clone)",
+            "Et_Model(Clone)",
+            "Pence_Model(Clone)"
         ],
         "treeData": [
             {
@@ -934,20 +969,15 @@
             "Rabbit (10)",
             "Rabbit (11)",
             "Rabbit (12)",
-            "Wolf (2)",
             "Wolf (3)",
-            "Wolf (4)",
-            "Bear (1)",
-            "Bear (2)",
-            "Bear (3)",
-            "Elephant"
+            "Bear (3)"
         ],
         "storage": []
     },
     "questProgressData": [
         {
             "npcName": "First_NPC",
-            "activeQuestIndex": 1,
+            "activeQuestIndex": 2,
             "quests": [
                 {
                     "questName": "Güven",
@@ -959,33 +989,33 @@
                 },
                 {
                     "questName": "Küçük parçalar",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 }
             ],
-            "npcDeactivated": false
+            "npcDeactivated": true
         },
         {
             "npcName": "Second_NPC",
-            "activeQuestIndex": 0,
+            "activeQuestIndex": 2,
             "quests": [
                 {
                     "questName": "Ormancı",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 },
                 {
                     "questName": "Saklama kabı",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 }
             ],
@@ -993,22 +1023,22 @@
         },
         {
             "npcName": "Third_NPC",
-            "activeQuestIndex": 0,
+            "activeQuestIndex": 2,
             "quests": [
                 {
                     "questName": "Ciraklik",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 },
                 {
                     "questName": "Ustalik",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 }
             ],
@@ -1016,27 +1046,27 @@
         },
         {
             "npcName": "Fourth_NPC",
-            "activeQuestIndex": 0,
+            "activeQuestIndex": 2,
             "quests": [
                 {
                     "questName": "Kasap",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 },
                 {
                     "questName": "Kasap",
-                    "accepted": false,
+                    "accepted": true,
                     "declined": false,
-                    "isCompleted": false,
-                    "initialDialogCompleted": false,
+                    "isCompleted": true,
+                    "initialDialogCompleted": true,
                     "currentReplyIndex": 0
                 }
             ],
-            "npcDeactivated": true
+            "npcDeactivated": false
         }
     ],
-    "currentNPCIndex": 0
+    "currentNPCIndex": 3
 }

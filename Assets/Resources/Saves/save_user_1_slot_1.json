@@ -1,34 +1,55 @@
 {
     "playerData": {
-        "positionX": 151.91522216796876,
-        "positionY": 1.0799998044967652,
-        "positionZ": 125.97602081298828,
+        "positionX": 66.18716430664063,
+        "positionY": 6.972243309020996,
+        "positionZ": 108.05863189697266,
         "health": 100.0,
-        "calories": 1919.0,
-        "hydration": 91.0,
+        "calories": 1981.0,
+        "hydration": 98.0,
         "inventoryContent": [
-            "Deri",
+            "Duvar",
+            "Tas",
+            "Tas",
+            "Tas",
             "Su",
             "Su",
-            "Ekmek"
+            "Dis",
+            "Dis",
+            "Dis",
+            "Pence",
+            "Pence",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Dis",
+            "Ekmek",
+            "Dis",
+            "Et",
+            "Tas",
+            "Zemin",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Kereste",
+            "Yay"
         ],
-        "quickSlotContent": [],
-        "points": 3,
-        "saveDateTime": "30.12.2025 21:02",
-        "hasTriggeredTomurIntro": 2,
+        "quickSlotContent": [
+            "Balta",
+            "Yay"
+        ],
+        "points": 0,
+        "saveDateTime": "06.01.2026 17:58",
+        "hasTriggeredTomurIntro": 0,
         "gameIsCompleted": false
     },
     "environmentData": {
         "pickedUpItems": [
-            "Hide_Model (1)",
-            "Hide_Model (2)",
-            "Hide_Model",
             "Stick_Model (1)",
-            "Stone009",
-            "Stone0010",
-            "Stone0016",
-            "Stick_Model (5)",
-            "Stick_Model (8)"
+            "Hide_Model (1)"
         ],
         "treeData": [
             {
@@ -942,26 +963,26 @@
     "questProgressData": [
         {
             "npcName": "First_NPC",
-            "activeQuestIndex": 2,
+            "activeQuestIndex": 0,
             "quests": [
                 {
                     "questName": "Güven",
-                    "accepted": true,
+                    "accepted": false,
                     "declined": false,
-                    "isCompleted": true,
-                    "initialDialogCompleted": true,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
                     "currentReplyIndex": 0
                 },
                 {
                     "questName": "Küçük parçalar",
-                    "accepted": true,
+                    "accepted": false,
                     "declined": false,
-                    "isCompleted": true,
-                    "initialDialogCompleted": true,
+                    "isCompleted": false,
+                    "initialDialogCompleted": false,
                     "currentReplyIndex": 0
                 }
             ],
-            "npcDeactivated": true
+            "npcDeactivated": false
         },
         {
             "npcName": "Second_NPC",
@@ -984,7 +1005,7 @@
                     "currentReplyIndex": 0
                 }
             ],
-            "npcDeactivated": false
+            "npcDeactivated": true
         },
         {
             "npcName": "Third_NPC",
@@ -1033,5 +1054,5 @@
             "npcDeactivated": true
         }
     ],
-    "currentNPCIndex": 1
+    "currentNPCIndex": 0
 }

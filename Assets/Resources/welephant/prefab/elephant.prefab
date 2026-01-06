@@ -6385,6 +6385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8305a8565a22f3243a761fdbcce76455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paremeter: 1
 --- !u!195 &3806483323365482902
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6450,6 +6451,7 @@ MonoBehaviour:
   bloodPuddle: {fileID: 428035040393169918}
   healthBarSlider: {fileID: 428035039023952647}
   thisAnimalType: 5
+  attackDamage: 1
 --- !u!54 &3806483323365482899
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -16,12 +16,12 @@ GameObject:
   - component: {fileID: -3639622680660950265}
   - component: {fileID: -8154114368191745549}
   m_Layer: 0
-  m_Name: Stick_Model
+  m_Name: Dal_Model
   m_TagString: pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5488065206914961131
 Transform:
   m_ObjectHideFlags: 0

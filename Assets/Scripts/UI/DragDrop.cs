@@ -117,16 +117,39 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private void DropItemIntoWorld(GameObject tempItemReference)
     {
         string cleanName = tempItemReference.name.Split(new string[] { "(Clone)" }, StringSplitOptions.None)[0];
+        //animasyonlu eşyalar için animasyonsuz yalın, rigidbody ve collider'li modeli devreye alıyoruz
+        if(cleanName == "Yay")cleanName="Yay1";
+        if(cleanName == "Balta")cleanName="Balta1";
+        if(cleanName == "Duvar")cleanName="Duvar1";
+        if(cleanName == "Zemin")cleanName="Zemin1";
+        if(cleanName == "Ok")cleanName="Ok1";
+        if(cleanName == "Sandık")cleanName="Sandık1";
         GameObject item = Instantiate(Resources.Load<GameObject>(cleanName + "_Model"));
 
         item.transform.position = Vector3.zero;
         var dropSpawnPosition = PlayerState.Instance.playerBody.transform.Find("DropSpawn").transform.position;
-        item.transform.localPosition = new Vector3(dropSpawnPosition.x, dropSpawnPosition.y, dropSpawnPosition.z);
+        if(PlayerState.Instance.playerBody.transform.eulerAngles.x > 30f)//kullanıcı eğimliyse nesneyi biraz yukardan ve dropspawna z eksenidne daha yakından at
+        {
+            item.transform.localPosition = new Vector3  (dropSpawnPosition.x, dropSpawnPosition.y+2.2f, dropSpawnPosition.z-1f);
+            Debug.Log(PlayerState.Instance.playerBody.transform.eulerAngles.x );
+            
+
+        }
+        else//kullanıcı düz gibiyse(30 derece eğimli değilse)
+        {
+            item.transform.localPosition = new Vector3  (dropSpawnPosition.x, dropSpawnPosition.y, dropSpawnPosition.z);
+            Debug.Log(PlayerState.Instance.playerBody.transform.eulerAngles.x );
+        }
+        
+        //Debug.Log                                   ("x:"+dropSpawnPosition.x+" y:"+dropSpawnPosition.y+1.5f+"  z:"+dropSpawnPosition.z);
 
         var itemsObject = FindObjectOfType<EnvironmentManager>().gameObject.transform.Find("[Items]");
         item.transform.SetParent(itemsObject.transform);
 
-        DestroyImmediate(tempItemReference);
+        String itemNameForInventoryList = tempItemReference.name.Split(new string[] { "(Clone)" }, StringSplitOptions.None)[0];
+        //InventorySystem.Instance.RemoveOneItem(itemNameForInventoryList);
+        Debug.Log(itemNameForInventoryList);
+        //DestroyImmediate(tempItemReference);
         InventorySystem.Instance.ReCalculateList();
         CraftingSystem.Instance.RefreshNeedItems();
     }
